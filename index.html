@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.style.css" />
+    <link rel="stylesheet" />
+    
+  </head>
+  <body>
+    
+    <div class="main-head">
+      <h1>CustoMer Login</h1>
+    </div>
+    <div class="login-form">
+      <div class="my-registered">
+        <h1>Registered Customer</h1>
+        <p>if you have a acount,sign in with your email addrees</p>
+      </div>
+
+      <div class="main-login">
+        <form action="">
+          <label
+            ><h4>Email:</h4>
+            <input
+              placeholder="Enter your Email"
+              class="input"
+              type="text"
+              name=""
+              id="email"
+            />
+          </label>
+          <label
+            ><h4>Password:</h4>
+            <input
+              placeholder="Enter your password"
+              class="input"
+              type="text"
+              name=""
+              id="password"
+            />
+          </label>
+        </form>
+      </div>
+
+      <div class="main-login">
+        <div class="forget">
+          <h4>forget you r password:</h4>
+          <button onclick="call()" class="mon-login">submit</button>
+        </div>
+        <div class="main-parent">
+          <a class="my-in" href="home.html">SIGN IN</a><br />
+          <br />
+          <a class="my-in" href="creat.html">CREATE AN ACCOUNT</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+  <script type="module"></script>
+  <script src="app.js"></script>
+</html>
