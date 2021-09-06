@@ -18,28 +18,30 @@ function view() {
   var a = document.getElementById("exampleModalCenter");
   a.innerHTML;
 }
-
-function cal() {
-  window.location.assign = "index.html";
-  window.location.assign = "creat.html";
-}
 async function call() {
   var userdata = {
     email: document.getElementById("email").value,
     password: document.getElementById("password").value,
   };
   await firebase.database().ref("/").push(userdata);
+  document.getElementById("email").value = "";
+  document.getElementById("password").value = "";
+  
 }
 async function data() {
-  var userdata = {
+  var creatdata = {
     name: document.getElementById("name").value,
     lname: document.getElementById("lname").value,
     Email: document.getElementById("Email").value,
     password: document.getElementById("password").value,
     cpassword: document.getElementById("cpassword").value,
   };
-
-  await firebase.database().ref("/EMAIL").push(userdata);
+  await firebase.database().ref("/EMAIL").push(creatdata);
+  document.getElementById("name").value = "";
+  document.getElementById("lname").value = "";
+  document.getElementById("Email").value = "";
+  document.getElementById("password").value = "";
+  document.getElementById("password").value = "";
 }
 async function order() {
   var order = {
@@ -50,4 +52,10 @@ async function order() {
     address: document.getElementById("address").value,
   };
   await firebase.database().ref("/Order").push(order);
+  document.getElementById("product").value = "";
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("phone").value = "";
+  document.getElementById("address").value = "";
 }
+

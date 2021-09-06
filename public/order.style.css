@@ -33,3 +33,24 @@ div{
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
 }
+
+@media (max-width:425px) {
+   #product{
+       width: 70%;
+   }
+   #name{
+       width: 70%;
+   }
+   #email{
+       width:70% ;
+   }
+   #phone{
+       width: 70%;
+   } 
+   #address{
+       width: 70%;
+   }
+   .submit{
+       width: 70%;
+   }
+}

@@ -47,6 +47,8 @@ h4 {
   text-decoration: underline;
 }
 .mon-login {
+  text-align: center;
+  display: inline-block;
   background-color: black;
   width: 100%;
   padding: 20px;
@@ -60,3 +62,18 @@ h4 {
 #password{
   border: 1px solid rgb(174, 216, 174);
 }
+@media (max-width:425px) {
+  .mon-login{
+   width:115% ;
+   color: white;
+   background-color: black;
+  }
+  #email{
+    width:110% ;   
+  } 
+  #password{
+    width:110% ;   
+  }
+
+}
+
